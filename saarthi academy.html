@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saarthi Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease-in;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: #caf0f8;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #03045e;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 1rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .section {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.05);
+    }
+
+    .section h3 {
+      margin-bottom: 1rem;
+      color: #0077b6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0077b6;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Saarthi Academy</h1>
+    <p>Empowering Learners Through Experiential Education</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#subjects">Subjects</a>
+    <a href="#approach">Our Approach</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="about">
+    <h1>Learn Anytime, Anywhere</h1>
+    <p>Saarthi Academy offers top-quality, affordable individual classes in Mathematics, Spoken English, Science, and Computer Science for learners aged 13 to adults, including working professionals and job seekers.</p>
+  </section>
+
+  <section class="sections" id="subjects">
+    <div class="section">
+      <h3>Mathematics</h3>
+      <p>Foundational to advanced topics taught in a clear and engaging way.</p>
+    </div>
+    <div class="section">
+      <h3>Spoken English</h3>
+      <p>Interactive sessions that improve communication skills and confidence.</p>
+    </div>
+    <div class="section">
+      <h3>Science</h3>
+      <p>Learn through experiments, visuals, and practical examples.</p>
+    </div>
+    <div class="section">
+      <h3>Computer Science</h3>
+      <p>From basic digital literacy to programming and tech skills for the future.</p>
+    </div>
+  </section>
+
+  <section class="hero" id="approach">
+    <h1>Experiential Learning</h1>
+    <p>We focus on hands-on learning, real-world examples, and personalized attention to make sure each student succeeds in their learning journey.</p>
+  </section>
+
+  <section class="sections" id="contact">
+    <div class="section">
+      <h3>Get in Touch</h3>
+      <p>Email: contact@saarthiacademy.com</p>
+      <p>Phone: +91-XXXXXXXXXX</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Saarthi Academy. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
